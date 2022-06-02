@@ -20,9 +20,9 @@ public class CalculatorTest {
         assertEquals(result, 0);
     }
 
-//    @Test
-//    void testSumPositiveCalues_whithPositiveValues() {
-//        int result = calculator.sumPositiveValues(10, 20, 30);
-//        assertEquals(result,60);
-//    }
+    @Test
+    void testSumPositiveCalues_whithPositiveValues() {
+        int result = calculator.sumPositiveValues(10, 20, 30);
+        assertEquals(result,60);
+    }
 }
