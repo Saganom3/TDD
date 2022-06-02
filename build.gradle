@@ -1,13 +1,21 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id "org.sonarqube" version "3.3"
 
 }
 group 'etb.demo'
 version '1.0-SNAPSHOT'
 
 
-
+sonarqube {
+    properties {
+        property "sonar.projectName", "ETB Demo"
+        property "sonar.projectKey", "OscarVallejo_ETB-Demo"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.organization", "oscarvallejo"
+    }
+}
 
 repositories {
     mavenCentral()
