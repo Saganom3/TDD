@@ -10,4 +10,14 @@ public class Calculator {
         }
         return sum;
     }
+
+    public int sumNegativeValues(int... numbers) {
+        int sum = 0;
+        for (int number : numbers) {
+            if(number<0){
+                sum += number;
+            }
+        }
+        return sum;
+    }
 }
