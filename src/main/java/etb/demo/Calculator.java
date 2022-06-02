@@ -28,4 +28,20 @@ public class Calculator {
         }
         return sum;
     }
+
+    public int restValues(int... numbers) {
+        int sum = 0;
+        for (int number : numbers) {
+            sum -= number;
+        }
+        return sum;
+    }
+
+    public int divValues(int... numbers) {
+        int sum = 1;
+        for (int number : numbers) {
+            sum /= number;
+        }
+        return sum;
+    }
 }
