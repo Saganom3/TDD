@@ -21,8 +21,26 @@ public class CalculatorTest {
     }
 
     @Test
-    void testSumPositiveCalues_whithPositiveValues() {
+    void testSumNegativeCalues_whithPositiveValues() {
         int result = calculator.sumPositiveValues(10, 20, 30);
         assertEquals(result,60);
+    }
+
+    @Test
+    public void testSumNegativeValues_withNegativeValues() {
+        int result = calculator.sumNegativeValues(-10, -20, -30);
+        assertEquals(result, -60);
+    }
+
+    @Test
+    void testSumPositiveCalues_whithPositiveValues() {
+        int result = calculator.sumNegativeValues(10, 20, 30);
+        assertEquals(result,0);
+    }
+
+    @Test
+    void testMultValuesCalues_whithPositiveValues() {
+        int result = calculator.multValues(10, 20, 30);
+        assertEquals(result,6000);
     }
 }
