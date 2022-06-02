@@ -42,4 +42,16 @@ class CalculatorTest {
         int result = calculator.multValues(10, 20, 30);
         assertEquals(6000, result);
     }
+
+//    @Test
+//    void testRestValuesCalues_whithPositiveValues() {
+//        int result = calculator.restValues(10, 20, 30);
+//        assertEquals(-60, result);
+//    }
+//
+//    @Test
+//    void testDivValuesCalues_whithPositiveValues() {
+//        int result = calculator.divValues(10, 20, 30);
+//        assertEquals(0, result);
+//    }
 }
