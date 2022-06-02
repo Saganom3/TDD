@@ -20,4 +20,12 @@ public class Calculator {
         }
         return sum;
     }
+
+    public int multValues(int... numbers) {
+        int sum = 1;
+        for (int number : numbers) {
+                sum *= number;
+        }
+        return sum;
+    }
 }
